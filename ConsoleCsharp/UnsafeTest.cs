@@ -10,11 +10,9 @@ namespace TestApp
 
     public class UnsafeTest
     {
-        public static void Execute()
+        public unsafe static void Execute()
         {
-            Console.WriteLine("execute");
-
-            /*var p = new Point();
+            var p = new Point();
 
             var pp = &p;
 
@@ -29,7 +27,7 @@ namespace TestApp
             Console.WriteLine(pb[0]);
             Console.WriteLine(pb[1]);
             Console.WriteLine(pb[2]);
-            Console.WriteLine(pb[3]);*/
+            Console.WriteLine(pb[3]);
         }
     }
 }
